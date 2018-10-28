@@ -31,7 +31,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="落花人独立，微雨燕双飞"
-                android:textColor="#000000"
                 android:textSize="@dimen/sp_14" />
 
             <TextView
@@ -42,7 +41,6 @@
                 android:ellipsize="end"
                 android:lines="2"
                 android:text="从此无心爱良夜，任他明月下西楼。去年今日此门中，人面桃花相映红。人面不知何处去，桃花依旧笑春风。"
-                android:textColor="#d200000f"
                 android:textSize="@dimen/sp_12" />
 
             <TextView
@@ -52,7 +50,6 @@
                 android:layout_gravity="end"
                 android:layout_marginTop="@dimen/dp_4"
                 android:text="霍小玉"
-                android:textColor="#d200000f"
                 android:textSize="@dimen/sp_12" />
 
 

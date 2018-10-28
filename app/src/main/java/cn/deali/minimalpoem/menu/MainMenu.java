@@ -1,16 +1,14 @@
 package cn.deali.minimalpoem.menu;
 
 import android.app.AlertDialog;
-import android.app.Notification;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.BitmapFactory;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import cn.deali.minimalpoem.MainApp;
 import cn.deali.minimalpoem.R;
 import cn.deali.minimalpoem.ConfigManager;
 import cn.deali.minimalpoem.activity.FavoriteActivity;
@@ -31,6 +29,18 @@ public class MainMenu {
             // 我的收藏
             case R.id.menu_favorite:
                 mContext.startActivity(new Intent(mContext, FavoriteActivity.class));
+                return true;
+
+            // 夜间模式
+            case R.id.menu_night_mode:
+                MainApp.getInstance().setNightMode(true);
+                ((AppCompatActivity) mContext).recreate();
+                return true;
+
+            // 白天模式
+            case R.id.menu_daylight_mode:
+                MainApp.getInstance().setNightMode(false);
+                ((AppCompatActivity) mContext).recreate();
                 return true;
 
             // 「关于」菜单
