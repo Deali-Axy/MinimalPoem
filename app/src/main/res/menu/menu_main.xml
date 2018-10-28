@@ -16,6 +16,12 @@
         app:showAsAction="never" />
 
     <item
+        android:id="@+id/menu_night_mode"
+        android:orderInCategory="100"
+        android:title="@string/night_mode"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/menu_check_updates"
         android:orderInCategory="100"
         android:title="@string/check_updates"
