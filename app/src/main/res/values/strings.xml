@@ -3,6 +3,8 @@
     <string name="action_settings">设置</string>
     <string name="check_updates">检查更新</string>
     <string name="favorite">我的收藏</string>
+    <string name="night_mode">夜间模式</string>
+    <string name="daylight_mode">白天模式</string>
     <string name="about">关于</string>
 
     <string name="poem_title">春江花月夜</string>
