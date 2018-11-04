@@ -5,6 +5,7 @@ import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -70,8 +71,8 @@ public class Poem {
     // 返回以逗号分割的内容
     public String getContentCsv() {
         // 根据不同安卓系统版本做的优化
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
-//            return String.join(",", this.content);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
+            return String.join(",", this.content);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             return this.content.stream().collect(Collectors.joining(","));
         } else {
@@ -86,6 +87,7 @@ public class Poem {
     }
 
     public void setContent(JSONArray contentArray) {
+        this.content.clear();
         for (int i = 0; i < contentArray.length(); i++) {
             try {
                 this.content.add(contentArray.getString(i));
@@ -106,5 +108,32 @@ public class Poem {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public String toJsonString() {
+        JSONObject jsonObject = new JSONObject();
+        try {
+            jsonObject.put("id", this.id);
+            jsonObject.put("author", this.author);
+            jsonObject.put("title", this.title);
+            jsonObject.put("content", this.getContentCsv());
+        } catch (JSONException ex) {
+            Log.e(TAG, ex.getMessage());
+        }
+        return jsonObject.toString();
+    }
+
+    public static Poem parseJsonString(String jsonString) {
+        Poem poem = new Poem();
+        try {
+            JSONObject jsonObject = new JSONObject(jsonString);
+            poem.setId(jsonObject.getInt("id"));
+            poem.setAuthor(jsonObject.getString("author"));
+            poem.setTitle(jsonObject.getString("title"));
+            poem.setContent(jsonObject.getString("content"));
+        } catch (JSONException ex) {
+            Log.e(TAG, ex.getMessage());
+        }
+        return poem;
     }
 }

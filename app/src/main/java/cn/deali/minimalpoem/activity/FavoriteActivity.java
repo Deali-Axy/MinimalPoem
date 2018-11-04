@@ -2,6 +2,7 @@ package cn.deali.minimalpoem.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -76,10 +77,20 @@ public class FavoriteActivity extends AppCompatActivity {
             }
         }));
 
-        // 从数据库里加载收藏列表
+        srlRefresh.setOnRefreshListener(this::loadFavorite);
+
+        loadFavorite();
+    }
+
+    /**
+     * 从数据库里加载收藏列表
+     */
+    private void loadFavorite() {
         PoemFavoriteEntityDao poemDao = MainApp.getInstance().daoSession.getPoemFavoriteEntityDao();
         poem_list = new ArrayList<>();
         poem_list.addAll(poemDao.loadAll());
         rvContent.setAdapter(new PoemAdapter(poem_list, this, rvContent));
+        Snackbar.make(rvContent, "刷新收藏夹完成！", Snackbar.LENGTH_SHORT).show();
+        srlRefresh.setRefreshing(false);
     }
 }

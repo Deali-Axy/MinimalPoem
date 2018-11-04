@@ -1,6 +1,7 @@
 package cn.deali.minimalpoem.adapter;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -45,8 +46,9 @@ public class PoemAdapter extends RecyclerView.Adapter<PoemAdapter.ContentHolder>
         this.mContentRv = contentRv;
     }
 
+    @NonNull
     @Override
-    public PoemAdapter.ContentHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public PoemAdapter.ContentHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_simple_list_1, parent, false);
         ContentHolder holder = new ContentHolder(view);
         view.setOnClickListener(holder);

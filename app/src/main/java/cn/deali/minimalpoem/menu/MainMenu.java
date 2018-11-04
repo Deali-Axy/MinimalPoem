@@ -50,11 +50,7 @@ public class MainMenu {
 
                 String version = configManager.getVersionName();
                 builder.setMessage(String.format("版本号：%s\n开发 by 画星星高手\n微信公众号：DealiAxy", version));
-                builder.setPositiveButton("我知道了", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
-                    }
+                builder.setPositiveButton("我知道了", (dialog, which) -> {
                 });
                 AlertDialog dialog = builder.create();
                 dialog.show();
