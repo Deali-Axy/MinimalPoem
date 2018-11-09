@@ -22,6 +22,8 @@ import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import com.jaeger.library.StatusBarUtil;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -74,17 +76,19 @@ public class PoemActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        // 状态栏颜色处理
+        StatusBarUtil.setTransparent(PoemActivity.this);
         setContentView(R.layout.activity_poem);
+
         ButterKnife.bind(this);
 
         ViewCompat.setNestedScrollingEnabled(svContent, true);
         setSupportActionBar(toolbar);
 
         // ActionBar 处理
-        ActionBar bar = getSupportActionBar();
-        if (bar != null)
-            bar.setDisplayHomeAsUpEnabled(false);
+//        ActionBar bar = getSupportActionBar();
+//        if (bar != null)
+//            bar.setDisplayHomeAsUpEnabled(false);
 
         setCurrentPoem(new Poem(0,
                 getString(R.string.poem_author),

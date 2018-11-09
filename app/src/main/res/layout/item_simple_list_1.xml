@@ -14,8 +14,6 @@
         android:layout_marginTop="10dp"
         android:clickable="true"
         android:focusable="true"
-        android:foreground="?android:attr/selectableItemBackground"
-        android:stateListAnimator="@drawable/selector_elevation"
         app:cardPreventCornerOverlap="false"
         app:cardUseCompatPadding="true">
 

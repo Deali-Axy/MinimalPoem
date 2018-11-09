@@ -10,6 +10,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.view.WindowManager;
+
+import com.jaeger.library.StatusBarUtil;
 
 import java.util.ArrayList;
 
@@ -36,7 +39,11 @@ public class FavoriteActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // 状态栏沉浸
+        StatusBarUtil.setColor(FavoriteActivity.this, getResources().getColor(R.color.colorPrimary));
         setContentView(R.layout.activity_favorite);
+
+
         ButterKnife.bind(this);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

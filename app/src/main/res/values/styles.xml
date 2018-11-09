@@ -9,14 +9,13 @@
     <!--</style>-->
 
     <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
-
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
     <!--<style name="Theme.AppCompat.DayNight.Dialog.Alert.Self">-->
-        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--<item name="colorAccent">@color/colorAccent</item>-->
     <!--</style>-->
 
     <style name="AppTheme.NoActionBar">

@@ -12,15 +12,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clickable="true"
-        android:stateListAnimator="@drawable/selector_elevation"
         android:layout_marginLeft="@dimen/dp_8"
         android:layout_marginRight="@dimen/dp_8"
         android:layout_marginBottom="@dimen/dp_8"
-        android:foreground="?android:attr/selectableItemBackground"
         app:cardCornerRadius="@dimen/dp_8"
         app:cardUseCompatPadding="true"
         app:cardPreventCornerOverlap="false"
-        android:visibility="visible">
+        android:visibility="visible"
+        android:focusable="true">
 
         <RelativeLayout
             android:layout_width="match_parent"

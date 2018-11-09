@@ -9,8 +9,8 @@ android {
         applicationId "cn.deali.minimalpoem"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 6
-        versionName "1.1.6"
+        versionCode 7
+        versionName "1.1.7"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -42,6 +42,7 @@ dependencies {
 
     // 第三方控件
     implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.jaeger.statusbarutil:library:1.4.0'     // 状态栏工具
 
     // GreenDao
     implementation 'org.greenrobot:greendao:3.2.2'
