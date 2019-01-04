@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FlaskView">
+        <!--The stroke color of flask-->
+        <attr name="stroke_color" format="color"></attr>
+
+        <!--The water color-->
+        <attr name="water_color" format="color"></attr>
+
+        <!--The bubble color-->
+        <attr name="bubble_color" format="color"></attr>
+
+        <!--The max radius of the bubbles-->
+        <attr name="bubble_max_radius" format="integer"></attr>
+
+        <!--The min radius of the bubbles-->
+        <attr name="bubble_min_radius" format="integer"></attr>
+
+        <!--The max speed of the bubbles-->
+        <attr name="bubble_max_speed" format="float"></attr>
+
+        <!--The min speed of the bubbles-->
+        <attr name="bubble_min_speed" format="float"></attr>
+
+        <!--Number of bubbles that can coexist at the same time-->
+        <attr name="bubble_max_number" format="integer"></attr>
+
+        <!--The creation of the bubble interval in millis-->
+        <attr name="bubble_creation_interval" format="integer"></attr>
+
+        <!--The stoke width of the flask-->
+        <attr name="stroke_width" format="dimension"></attr>
+
+        <!--The water level to the percentage of the height of the flask-->
+        <attr name="water_height_percent" format="float"></attr>
+    </declare-styleable>
+</resources>

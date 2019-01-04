@@ -40,7 +40,11 @@
             android:name=".activity.FavoriteActivity"
             android:label="@string/title_activity_favorite"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activity.TempActivity"></activity>
+        <activity android:name=".activity.TempActivity" />
+        <activity
+            android:name=".activity.DeveloperActivity"
+            android:label="@string/title_activity_developer"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

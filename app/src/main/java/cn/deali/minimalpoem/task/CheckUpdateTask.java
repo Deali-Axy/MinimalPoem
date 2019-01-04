@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -13,6 +14,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import cn.deali.minimalpoem.MainApp;
+import cn.deali.minimalpoem.R;
 import cn.deali.minimalpoem.utils.http.HttpRequestUtil;
 import cn.deali.minimalpoem.utils.http.tool.HttpRequestData;
 import cn.deali.minimalpoem.utils.http.tool.HttpResponseData;
@@ -112,6 +114,18 @@ public class CheckUpdateTask extends AsyncTask<Void, Integer, HttpResponseData> 
         });
 
         AlertDialog dialog = builder.create();
+
+        // 适配夜间模式和白天模式
+        if (MainApp.getInstance().getNightMode())
+            dialog.setOnShowListener(dialogInterface -> {
+                dialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(ContextCompat.getColor(mContext, R.color.white));
+                dialog.getButton(AlertDialog.BUTTON_NEUTRAL).setTextColor(ContextCompat.getColor(mContext, R.color.white));
+            });
+        else
+            dialog.setOnShowListener(dialogInterface -> {
+                dialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(ContextCompat.getColor(mContext, R.color.black));
+                dialog.getButton(AlertDialog.BUTTON_NEUTRAL).setTextColor(ContextCompat.getColor(mContext, R.color.black));
+            });
         dialog.show();
     }
 }
