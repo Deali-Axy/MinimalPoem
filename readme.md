@@ -10,6 +10,12 @@
 3. 极简的阅读界面，并没有任何的广告，给你最简单的阅读环境，而且刷新很难碰到重复的。
 
 
+## Screenshots
+![](https://github.com/Deali-Axy/MinimalPoem/blob/master/Screenshot/2018-10-31%2011-30-09%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png?raw=true)
+![](https://github.com/Deali-Axy/MinimalPoem/blob/master/Screenshot/2018-10-31%2011-30-42%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png?raw=true)
+![](https://github.com/Deali-Axy/MinimalPoem/blob/master/Screenshot/2018-10-31%2011-31-10%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png?raw=true)
+![](https://github.com/Deali-Axy/MinimalPoem/blob/master/Screenshot/2018-10-31%2011-31-26%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png?raw=true)
+
 ## 1.1.8
 1. 增加对话框对夜间模式和白天模式的适配
 2. 增加开发模式用以测试新特性
