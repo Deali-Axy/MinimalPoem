@@ -31,7 +31,6 @@ public class MainApp extends Application {
         daoSession = initGreenDao();
     }
 
-
     public void setNightMode(boolean isEnabled) {
         if (isEnabled)
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
