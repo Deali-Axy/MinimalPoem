@@ -16,6 +16,17 @@
 ![](https://github.com/Deali-Axy/MinimalPoem/blob/master/Screenshot/2018-10-31%2011-31-10%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png?raw=true)
 ![](https://github.com/Deali-Axy/MinimalPoem/blob/master/Screenshot/2018-10-31%2011-31-26%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png?raw=true)
 
+## 1.1.11
+1. 修改app图标
+
+## 1.1.10
+1. 修复无法联网的bug
+
+## 1.1.9
+1. 升级SDK版本
+2. 优化启动速度
+3. 适配Android 10
+
 ## 1.1.8
 1. 增加对话框对夜间模式和白天模式的适配
 2. 增加开发模式用以测试新特性

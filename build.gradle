@@ -3,12 +3,16 @@
 buildscript {
 
     repositories {
+//        google()
+//        jcenter()
+//        mavenCentral() // add repository
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public' }
         google()
-        jcenter()
-        mavenCentral() // add repository
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.2'
+        classpath 'com.android.tools.build:gradle:3.5.3'
         classpath 'com.jakewharton:butterknife-gradle-plugin:9.0.0-rc2'
         classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2' // GreenDao
 
@@ -19,12 +23,15 @@ buildscript {
 
 allprojects {
     repositories {
-        google()
-        jcenter()
-        maven {
-            url 'http://www.idescout.com/maven/repo/'
-            name 'IDEScout, Inc.'
-        }
+//        google()
+//        jcenter()
+//        maven {
+//            url 'http://www.idescout.com/maven/repo/'
+//            name 'IDEScout, Inc.'
+//        }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public' }
     }
 }
 
