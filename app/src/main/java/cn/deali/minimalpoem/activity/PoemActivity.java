@@ -183,7 +183,7 @@ public class PoemActivity extends AppCompatActivity {
 
         @Override
         protected HttpResponseData doInBackground(Void... voids) {
-            HttpRequestData request = new HttpRequestData("http://dc.deali.cn/api/poem/tang");
+            HttpRequestData request = new HttpRequestData("http://221.5.2.210:15911/api/poem/tang");
             return HttpRequestUtil.getData(request);
         }
 

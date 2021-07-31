@@ -3,12 +3,12 @@ apply plugin: 'org.greenrobot.greendao' // apply plugin
 
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
     buildToolsVersion '28.0.3'
     defaultConfig {
         applicationId "cn.deali.minimalpoem"
         minSdkVersion 24
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode 11
         versionName "1.1.11"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -45,7 +45,7 @@ dependencies {
     implementation 'com.jaeger.statusbarutil:library:1.4.0'     // 状态栏工具
 
     // GreenDao
-    implementation 'org.greenrobot:greendao:3.2.2'
+    implementation 'org.greenrobot:greendao:3.3.0'
     // add library
     // This is only needed if you want to use encrypted databases
     //    implementation 'net.zetetic:android-database-sqlcipher:3.5.6'//加密库依赖（可选项）

@@ -16,6 +16,11 @@
 ![](https://github.com/Deali-Axy/MinimalPoem/blob/master/Screenshot/2018-10-31%2011-31-10%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png?raw=true)
 ![](https://github.com/Deali-Axy/MinimalPoem/blob/master/Screenshot/2018-10-31%2011-31-26%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png?raw=true)
 
+
+## 1.1.12
+- 换了个服务器，又可以用了
+- 升级依赖库
+
 ## 1.1.11
 1. 修改app图标
 
