@@ -1,0 +1,37 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <shortcut-->
+<!--        android:shortcutId="testShortcut"-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@mipmap/ic_avatar"-->
+<!--        android:shortcutShortLabel="@string/test_shortcut_label"-->
+<!--        android:shortcutLongLabel="@string/test_shortcut_long_label"-->
+<!--        android:shortcutDisabledMessage="@string/test_shortcut_disabled_message">-->
+<!--        <intent-->
+<!--            android:action="android.intent.action.VIEW"-->
+<!--            android:targetPackage="cn.deali.minimalpoem"-->
+<!--            android:targetClass="cn.deali.minimalpoem.activity.PoemActivity" />-->
+<!--        &lt;!&ndash; If your shortcut is associated with multiple intents, include them-->
+<!--             here. The last intent in the list determines what the user sees when-->
+<!--             they launch this shortcut. &ndash;&gt;-->
+<!--        <categories android:name="android.shortcut.conversation" />-->
+<!--        <capability-binding android:key="actions.intent.CREATE_MESSAGE" />-->
+<!--    </shortcut>-->
+
+    <shortcut
+        android:shortcutId="daily_poem"
+        android:enabled="true"
+        android:icon="@mipmap/ic_avatar"
+        android:shortcutShortLabel="@string/daily_poem_label"
+        android:shortcutLongLabel="@string/daily_poem_long_label"
+        android:shortcutDisabledMessage="@string/daily_poem_disabled_message">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="cn.deali.minimalpoem"
+            android:targetClass="cn.deali.minimalpoem.activity.PoemActivity" />
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation" />
+        <capability-binding android:key="actions.intent.CREATE_MESSAGE" />
+    </shortcut>
+</shortcuts>

@@ -15,4 +15,12 @@
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="title_activity_favorite">我的收藏</string>
     <string name="title_activity_developer">开发者模式</string>
+
+    <string name="test_shortcut_label">测试label</string>
+    <string name="test_shortcut_long_label">测试 long label</string>
+    <string name="test_shortcut_disabled_message">测试 disable message</string>
+
+    <string name="daily_poem_label">每日一诗</string>
+    <string name="daily_poem_long_label">每日一诗</string>
+    <string name="daily_poem_disabled_message">每日一诗不可用</string>
 </resources>
