@@ -1,7 +1,17 @@
+使用Flutter全新重构版本已上线，欢迎下载体验！
+
+基于上一代「极简诗」全新开发，内置了几十万的诗词、古文数据，包括《诗经》、《全唐诗》、《全宋诗》、《全宋词》、《元曲》、《花间集》、《南唐二主词》等诗集，并且还有《论语》、《幽梦影》等文集，极简的阅读界面，无任何的广告，让用户完全回归最纯粹的阅读学习体验。
+
+更多诗集会在后续更新添加，欢迎大家测试 & 提供建议～
+
+商店地址：https://www.coolapk.com/apk/251155
+
 ## 应用介绍
 「极简·诗」是一款古诗词的阅读学习应用，里面收录了海量的古诗词，而且类别以及题材、作者也是丰富多样，让你的学习的范围更加的广，极简的阅读界面完全回归最纯粹的阅读环境，无任何的广告而且刷新基本不会碰到同一首。
 
 古诗数据来自『唐诗三百首 319首』和『全唐诗 42904首』总共43223首~
+
+已经在酷安上架，欢迎下载体验：https://www.coolapk.com/apk/cn.deali.minimalpoem
 
 
 ## 应用特色
@@ -11,10 +21,10 @@
 
 
 ## Screenshots
-![](https://github.com/Deali-Axy/MinimalPoem/blob/master/Screenshot/2018-10-31%2011-30-09%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png?raw=true)
-![](https://github.com/Deali-Axy/MinimalPoem/blob/master/Screenshot/2018-10-31%2011-30-42%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png?raw=true)
-![](https://github.com/Deali-Axy/MinimalPoem/blob/master/Screenshot/2018-10-31%2011-31-10%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png?raw=true)
-![](https://github.com/Deali-Axy/MinimalPoem/blob/master/Screenshot/2018-10-31%2011-31-26%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png?raw=true)
+![](http://image.coolapk.com/apk_image/2018/1031/11/f86312aaeb476465f442f025ba60bd4e-202677-o_1cr42rl1m15a612rtrp11tk4pkd12-uid-690251@556x1029.png)
+![](http://image.coolapk.com/apk_image/2018/1031/11/fd56b0a251115261af744a0cacf8d4bc-202677-o_1cr42rl1mbs4q0c1ftg4ug18mf14-uid-690251@556x1029.png)
+![](http://image.coolapk.com/apk_image/2018/1031/11/f86312aaeb476465f442f025ba60bd4e-202677-o_1cr42rl1m15a612rtrp11tk4pkd12-uid-690251@556x1029.png)
+![](http://image.coolapk.com/apk_image/2018/1031/11/00662e061deba9e4c9332f54384bf172-202677-o_1cr42rl1m2oo6loqsqlc1elq13-uid-690251@556x1029.png)
 
 
 ## 更新日志
