@@ -76,12 +76,17 @@ public class PoemActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // 状态栏沉浸
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        //注意要清除 FLAG_TRANSLUCENT_STATUS flag
+        getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        getWindow().setStatusBarColor(getResources().getColor(android.R.color.transparent));
+
         // 状态栏颜色处理
-        StatusBarUtil.setTransparent(PoemActivity.this);
+//        StatusBarUtil.setTransparent(PoemActivity.this);
+
         setContentView(R.layout.activity_poem);
-
         ButterKnife.bind(this);
-
         ViewCompat.setNestedScrollingEnabled(svContent, true);
         setSupportActionBar(toolbar);
 
@@ -183,7 +188,7 @@ public class PoemActivity extends AppCompatActivity {
 
         @Override
         protected HttpResponseData doInBackground(Void... voids) {
-            HttpRequestData request = new HttpRequestData("http://221.5.2.210:15911/api/poem/tang");
+            HttpRequestData request = new HttpRequestData("http://221.5.2.200:15911/api/poem/tang");
             return HttpRequestUtil.getData(request);
         }
 
@@ -210,7 +215,7 @@ public class PoemActivity extends AppCompatActivity {
     class GetHeaderImageTask extends AsyncTask<Void, Integer, HttpResponseData> {
         @Override
         protected HttpResponseData doInBackground(Void... voids) {
-            return HttpRequestUtil.getImage(new HttpRequestData("https://picsum.photos/1080/675?image=957&random&blur"));
+            return HttpRequestUtil.getImage(new HttpRequestData("http://www.sblt.deali.cn:15002/Api/PicLib/Random/1080/675\n"));
         }
 
         @Override
