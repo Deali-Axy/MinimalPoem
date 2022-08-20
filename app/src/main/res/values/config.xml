@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="host">http://221.5.2.210:15911</string>
+    <string name="host">http://221.5.2.200:15911</string>
     <string name="app_id">729eb29d-7ff1-4cbd-a37d-c2144c2d4ac9</string>
     <string name="db_name">main.db</string>
 </resources>
