@@ -31,8 +31,8 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="www.deali.cn"
-                    android:pathPattern="/minimal_poem"
+                    android:host="blog.deali.cn"
+                    android:pathPattern="/"
                     android:scheme="http" />
             </intent-filter>
 
