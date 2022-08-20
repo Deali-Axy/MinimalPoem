@@ -50,7 +50,7 @@ public class MainMenu {
                 builder.setTitle(String.format("关于「%s」", mContext.getString(R.string.app_name)));
 
                 String version = configManager.getVersionName();
-                builder.setMessage(String.format("版本号：%s\n开发 by 画星星高手\n微信公众号：DealiAxy", version));
+                builder.setMessage(String.format("版本号：%s\n开发 by 画星星高手\n微信公众号：程序设计实验室", version));
                 builder.setPositiveButton("我知道了", (dialog, which) -> {
 
                 });
